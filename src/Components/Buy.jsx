@@ -23,7 +23,6 @@ export default (props) => {
     };
     return (
         <>
-            <Navigation />
             <aside style={{ display: props.display }}>
                 <section>
                     <img src={url} />

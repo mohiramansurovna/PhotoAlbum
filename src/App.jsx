@@ -9,6 +9,8 @@ import Footer from './Components/Footer';
 import About from './Components/About';
 import SignUp from './Components/SignUp';
 import SignIn from './Components/SignIn';
+import Modechanger from './Components/Modechanger';
+
 export const CurrentUser = React.createContext({ user: '' });
 export const NewUser = React.createContext({ newUser: '' });
 export const SavedContext = React.createContext({
@@ -80,14 +82,33 @@ function App() {
                         <SavedContext.Provider
                             value={{ saved: saved, setSaved: setSaved }}
                         >
+                            <Modechanger />
                             <Routes>
                                 <Route path='/PhotoAlbum/' element={<Home />} />
-                                <Route path='/PhotoAlbum/search' element={<Album />} />
-                                <Route path='/PhotoAlbum/buy' element={<Buy />} />
-                                <Route path='/PhotoAlbum/saved' element={<Saved />} />
-                                <Route path='/PhotoAlbum/about' element={<About />} />
-                                <Route path='/PhotoAlbum/signUp' element={<SignUp />} />
-                                <Route path='/PhotoAlbum/signIn' element={<SignIn />} />
+                                <Route
+                                    path='/PhotoAlbum/search'
+                                    element={<Album />}
+                                />
+                                <Route
+                                    path='/PhotoAlbum/buy'
+                                    element={<Buy />}
+                                />
+                                <Route
+                                    path='/PhotoAlbum/saved'
+                                    element={<Saved />}
+                                />
+                                <Route
+                                    path='/PhotoAlbum/about'
+                                    element={<About />}
+                                />
+                                <Route
+                                    path='/PhotoAlbum/signUp'
+                                    element={<SignUp />}
+                                />
+                                <Route
+                                    path='/PhotoAlbum/signIn'
+                                    element={<SignIn />}
+                                />
                             </Routes>
                             <Footer />
                         </SavedContext.Provider>

@@ -7,7 +7,7 @@ import NavHome from './NavHome';
 export default () => {
     const [error, setError] = useState([
         'Your password should be at least 8 characters',
-        'initial',
+        '',
     ]);
     const [email, setEmail] = useState('');
     const [temporary, setTemporary] = useState('');
@@ -23,7 +23,7 @@ export default () => {
                 'Password and confirmend password are not matched',
                 'red',
             ]);
-        } else if (temporary.length < 0) {
+        } else if (temporary.length < 8) {
             setError([
                 'Hey dude I told u it should be at least 8 characters write more',
                 'red',
@@ -82,7 +82,7 @@ export default () => {
                 </div>
 
                 <p>
-                    Already have an account? <Link to='/PhotoAlbum/signIn'>Sign In</Link>
+                    Already have an account? <Link id='pLink' to='/PhotoAlbum/signIn'>Sign In</Link>
                 </p>
             </form>
         </>
