@@ -38,7 +38,7 @@ export default () => {
             setUser(email);
             setNewUser(email);
             setPassword(temporary);
-            navigate('/signIn');
+            navigate('/PhotoAlbum/signIn');
         }
     }
     return (
@@ -82,7 +82,7 @@ export default () => {
                 </div>
 
                 <p>
-                    Already have an account? <Link to='/signIn'>Sign In</Link>
+                    Already have an account? <Link to='/PhotoAlbum/signIn'>Sign In</Link>
                 </p>
             </form>
         </>

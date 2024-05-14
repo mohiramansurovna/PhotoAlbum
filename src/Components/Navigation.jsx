@@ -10,7 +10,7 @@ export default () => {
                     className={({ isActive }) => {
                         return isActive ? 'navLink active' : 'navLink';
                     }}
-                    to='/'
+                    to='/PhotoAlbum/'
                 >
                     Home
                 </NavLink>
@@ -18,7 +18,7 @@ export default () => {
                     className={({ isActive }) => {
                         return isActive ? 'navLink active' : 'navLink';
                     }}
-                    to='/search'
+                    to='/PhotoAlbum/search'
                 >
                     Search
                 </NavLink>
@@ -26,7 +26,7 @@ export default () => {
                     className={({ isActive }) => {
                         return isActive ? 'navLink active' : 'navLink';
                     }}
-                    to='/saved'
+                    to='/PhotoAlbum/saved'
                 >
                     Collection
                 </NavLink>
@@ -34,7 +34,7 @@ export default () => {
                     className={({ isActive }) => {
                         return isActive ? 'navLink active' : 'navLink';
                     }}
-                    to='/about'
+                    to='/PhotoAlbum/about'
                 >
                     About
                 </NavLink>

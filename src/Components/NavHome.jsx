@@ -10,7 +10,7 @@ export default () => {
                     className={({ isActive }) => {
                         return isActive ? 'navLink active' : 'navLink';
                     }}
-                    to='/'
+                    to='/PhotoAlbum/'
                 >
                     Home
                 </NavLink>
@@ -18,7 +18,7 @@ export default () => {
                     className={({ isActive }) => {
                         return isActive ? 'navLink active' : 'navLink';
                     }}
-                    to='/signUp'
+                    to='/PhotoAlbum/signUp'
                 >
                     Sign Up
                 </NavLink>
@@ -26,7 +26,7 @@ export default () => {
                     className={({ isActive }) => {
                         return isActive ? 'navLink active' : 'navLink';
                     }}
-                    to='/signIn'
+                    to='/PhotoAlbum/signIn'
                 >
                     Sign In
                 </NavLink>

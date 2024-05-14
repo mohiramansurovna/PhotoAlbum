@@ -21,7 +21,7 @@ export default () => {
             setError(['Incorrect Username', 'red']);
         } else {
             setUser(email);
-            navigate('/search');
+            navigate('/PhotoAlbum/search');
         }
     }
     return (
@@ -58,7 +58,7 @@ export default () => {
                     </button>
                 </div>
                 <p>
-                    Don't have an account <Link to='/signUp'>Sign Up</Link>
+                    Don't have an account <Link to='/PhotoAlbum/signUp'>Sign Up</Link>
                 </p>
             </form>
         </>
