@@ -81,13 +81,13 @@ function App() {
                             value={{ saved: saved, setSaved: setSaved }}
                         >
                             <Routes>
-                                <Route path='/' element={<Home />} />
-                                <Route path='/search' element={<Album />} />
-                                <Route path='/buy' element={<Buy />} />
-                                <Route path='/saved' element={<Saved />} />
-                                <Route path='/about' element={<About />} />
-                                <Route path='/signUp' element={<SignUp />} />
-                                <Route path='/signIn' element={<SignIn />} />
+                                <Route path='/PhotoAlbum/' element={<Home />} />
+                                <Route path='/PhotoAlbum/search' element={<Album />} />
+                                <Route path='/PhotoAlbum/buy' element={<Buy />} />
+                                <Route path='/PhotoAlbum/saved' element={<Saved />} />
+                                <Route path='/PhotoAlbum/about' element={<About />} />
+                                <Route path='/PhotoAlbum/signUp' element={<SignUp />} />
+                                <Route path='/PhotoAlbum/signIn' element={<SignIn />} />
                             </Routes>
                             <Footer />
                         </SavedContext.Provider>
