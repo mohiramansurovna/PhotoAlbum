@@ -363,6 +363,10 @@ body #home section h1 {
   body #home section h1 {
     font-size: 35px;
   }
+  body #themeChangeButton {
+    position: fixed;
+    top: 30px;
+  }
 }
 
 body.lightMode {
@@ -458,6 +462,11 @@ body.lightMode #home section img {
 }
 body.lightMode #home section img:hover {
   box-shadow: 0 0 50px 20px #b69ac9;
+}
+@media screen and (min-width: 1024px) {
+  body.lightMode header {
+    background-color: #dad6db;
+  }
 }
 
 #themeChangeButton {

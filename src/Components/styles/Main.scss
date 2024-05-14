@@ -354,142 +354,152 @@ body {
                 }
             }
         }
+        #themeChangeButton{
+            position: fixed;
+            top:30px;
+        }
     }
 }
-body.lightMode{
+body.lightMode {
     background-color: #dad6db;
-    header{
-        h1{
-            color:$mainBC
-        }
-        nav{
-            .navLink{
-                color:$mainBC;
-                &:active{
-                    color:$mainBC;
-                }
-            }
-            .active{
-                background-color: $mainC;
-                color:$mainBC;
-            }
-        }
-    }
-    
-    #inputBox{input{
-        color:$mainBC;
-        background-color: transparent;
-    }}
-    main{
-        h1{
+    header {
+        h1 {
             color: $mainBC;
         }
-        img{
-            box-shadow: 0px 0px 20px 1px $mainC;
-        }
-    }
-    aside{
-        background-color:rgb(188, 182, 189);
-        section{
-            &:first-child{
-            h3{
-                color: rgb(32, 32, 32);
-            }
-        }
-        &:nth-child(2){
-            h3{
-                color:$mainBC;
-            }
-            button{
+        nav {
+            .navLink {
                 color: $mainBC;
-                border-color:rgba(176, 113, 187, 0.309) ;
-                &:nth-child(2) {
-                    background-color: transparent;
+                &:active {
                     color: $mainBC;
                 }
+            }
+            .active {
+                background-color: $mainC;
+                color: $mainBC;
             }
         }
     }
 
+    #inputBox {
+        input {
+            color: $mainBC;
+            background-color: transparent;
+        }
     }
-    footer{
+    main {
+        h1 {
+            color: $mainBC;
+        }
+        img {
+            box-shadow: 0px 0px 20px 1px $mainC;
+        }
+    }
+    aside {
+        background-color: rgb(188, 182, 189);
+        section {
+            &:first-child {
+                h3 {
+                    color: rgb(32, 32, 32);
+                }
+            }
+            &:nth-child(2) {
+                h3 {
+                    color: $mainBC;
+                }
+                button {
+                    color: $mainBC;
+                    border-color: rgba(176, 113, 187, 0.309);
+                    &:nth-child(2) {
+                        background-color: transparent;
+                        color: $mainBC;
+                    }
+                }
+            }
+        }
+    }
+    footer {
         background-color: #dfd4e2;
-        color:$mainBC;
-        nav{
-            i{
-                color:$mainBC;
+        color: $mainBC;
+        nav {
+            i {
+                color: $mainBC;
             }
         }
     }
-    form{
+    form {
         border-color: $mainBC;
-        div:first-child{
-            h1{
-                color:$mainBC
+        div:first-child {
+            h1 {
+                color: $mainBC;
             }
         }
-        label{
-            color:$mainBC;
-            span{
-                color:$mainBC;
+        label {
+            color: $mainBC;
+            span {
+                color: $mainBC;
             }
         }
-        input{
-            color:$mainBC;
-            border-color:$mainBC;
+        input {
+            color: $mainBC;
+            border-color: $mainBC;
             background-color: transparent;
         }
         div:nth-child(8),
-        div:nth-child(6){
-            button{
-                color:$mainBC;
-                border-color:$mainBC;
+        div:nth-child(6) {
+            button {
+                color: $mainBC;
+                border-color: $mainBC;
                 &:hover,
                 &:hover #formLink {
                     background-color: $mainBC;
                     color: $mainC;
                 }
             }
-            #formLink{
-                color:$mainBC;
+            #formLink {
+                color: $mainBC;
             }
         }
-        p{
-            color:$mainBC;
-            #pLink{
-                color:$mainBC;
+        p {
+            color: $mainBC;
+            #pLink {
+                color: $mainBC;
             }
         }
     }
-    #home{
-        section{
-            img{
-                box-shadow:none;
-            &:hover{
-                box-shadow: 0 0 50px 20px $mainC;
+    #home {
+        section {
+            img {
+                box-shadow: none;
+                &:hover {
+                    box-shadow: 0 0 50px 20px $mainC;
+                }
             }
         }
+    }
+    @media screen and (min-width: 1024px) {
+        header {
+            background-color: #dad6db;
         }
     }
 }
-#themeChangeButton{
-    border:solid 1px $mainC;
+#themeChangeButton {
+    border: solid 1px $mainC;
     background-color: transparent;
     border-radius: 50%;
-    padding:5px 7px;
+    padding: 5px 7px;
     position: absolute;
-    top:20px;
-    right:30px;
-    z-index:3;
+    top: 20px;
+    right: 30px;
+    z-index: 3;
 }
-.animated{
-    animation: animateButton .4s ease-in-out;
+.animated {
+    animation: animateButton 0.4s ease-in-out;
 }
-@keyframes animateButton{
-    0%{
-        transform:rotate(0);
+@keyframes animateButton {
+    0% {
+        transform: rotate(0);
     }
-    100%{
-        transform:rotate(360deg);
+    100% {
+        transform: rotate(360deg);
     }
 }
