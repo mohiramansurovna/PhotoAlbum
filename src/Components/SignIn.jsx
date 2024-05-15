@@ -49,7 +49,7 @@ export default () => {
                 />
                 <div>
                     <button>
-                        <Link id='formLink' to='/'>
+                        <Link id='formLink' to='/PhotoAlbum/'>
                             Cancel
                         </Link>
                     </button>

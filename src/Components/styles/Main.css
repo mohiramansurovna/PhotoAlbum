@@ -3,6 +3,9 @@ body {
   overflow-x: hidden;
   background-color: #242424;
   margin: 0;
+  position: absolute;
+  top: 0;
+  left: auto;
 }
 body header {
   z-index: 2;
@@ -30,7 +33,7 @@ body header nav {
   width: 100vw;
 }
 body header nav .navLink {
-  margin: 0 5px;
+  margin: 0;
   font-size: 19px;
   text-decoration: none;
   padding: 0 20px;
@@ -63,7 +66,7 @@ body #inputBox input {
   color: #b69ac9;
   background-color: #242424;
   height: 50px;
-  width: 65vw;
+  width: 85vw;
   margin-right: -53px;
   border-radius: 50px;
   border: solid 1px #b69ac9;
@@ -72,7 +75,7 @@ body #inputBox input {
 body main {
   margin: 0 auto;
   width: 80vw;
-  min-height: 300px;
+  min-height: 620px;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
@@ -87,7 +90,7 @@ body main h1 {
   font-size: 22px;
 }
 body main img {
-  width: 150px;
+  width: 200px;
   margin: 10px;
   border-radius: 20px 400px 50px 300px;
 }
@@ -130,7 +133,7 @@ body aside {
   transform: translateX(-50%);
   background-color: rgb(47, 53, 54);
   border-radius: 20px;
-  width: 410px;
+  width: 350px;
   height: 500px;
   display: flex;
   justify-content: space-around;
@@ -142,7 +145,7 @@ body aside * {
 body aside section:first-child img {
   min-width: 200px;
   max-height: 350px;
-  transform: translateX(100px);
+  transform: translateX(70px);
 }
 body aside section:first-child h3 {
   text-align: center;
@@ -161,7 +164,7 @@ body aside section:nth-child(2) button {
   font-size: 25px;
   padding-top: 0px;
   line-height: 0;
-  width: 205px;
+  width: 175px;
   height: 40px;
   position: absolute;
   bottom: 0;
@@ -174,7 +177,7 @@ body aside section:nth-child(2) button:hover {
   background-color: rgba(143, 143, 143, 0.198);
 }
 body aside section:nth-child(2) button:nth-child(2) {
-  left: 205px;
+  left: 175px;
   border-radius: 0 0 20px 0;
   background-color: #b69ac9;
   color: #242424;
@@ -206,7 +209,7 @@ body footer h3 {
 }
 body footer img {
   height: 150px;
-  margin-left: 300px;
+  margin-left: 200px;
 }
 body form {
   border: solid 1px #b69ac9;
@@ -275,6 +278,9 @@ body form div:nth-child(6) button:hover #formLink {
 body form div:nth-child(8) button #formLink,
 body form div:nth-child(6) button #formLink {
   text-decoration: none;
+  z-index: 2;
+  padding: 5px 60px;
+  cursor: auto;
 }
 body form p {
   text-align: center;
@@ -284,6 +290,7 @@ body form p {
 body #home {
   width: 100vw;
   margin-top: 100px;
+  min-height: 300vh;
 }
 body #home section {
   width: 99vw;
@@ -342,11 +349,16 @@ body #home section h1 {
   body #inputBox {
     margin-top: 100px;
   }
+  body #inputBox input {
+    width: 65vw;
+  }
   body footer img {
-    margin-left: 1100px;
+    margin-left: 80vw;
   }
   body form {
-    margin-top: 100px;
+    margin-top: 20vh;
+    min-height: 40vh;
+    margin-bottom: 24vh;
   }
   body #home {
     transform: translateX(-10px);

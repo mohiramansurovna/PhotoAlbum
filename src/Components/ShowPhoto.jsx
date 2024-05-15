@@ -18,6 +18,8 @@ export default (props) => {
                 props.setNoResult(
                     `Sorry, we couldn't find any photo named "${search}"`
                 );
+            }else{
+                props.setNoResult(null);
             }
             setPhoto(responce.data.results[props.index]);
             setPhotoFallBack(
@@ -42,11 +44,9 @@ export default (props) => {
                             ? photo.alt_description
                             : null
                     }
-                    cost={props.index == 0 ? 1 : props.index}
+                    cost={props.index == 0? 1: props.index}
                     url={
-                        typeof photo.urls !== 'undefined'
-                            ? photo.urls.full
-                            : null
+                        typeof photo.urls !== 'undefined'?photo.urls.full:null
                     }
                     display={display}
                     setDisplay={setDisplay}

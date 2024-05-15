@@ -6,6 +6,9 @@ body {
     overflow-x: hidden;
     background-color: $mainBC;
     margin: 0;
+    position: absolute;
+    top:0;
+    left:auto;
     header {
         z-index: 2;
         font-family: $font;
@@ -29,7 +32,7 @@ body {
             justify-content: center;
             width: 100vw;
             .navLink {
-                margin: 0 5px;
+                margin: 0;
                 font-size: 19px;
                 text-decoration: none;
                 padding: 0 20px;
@@ -62,7 +65,7 @@ body {
             color: $mainC;
             background-color: $mainBC;
             height: 50px;
-            width: 65vw;
+            width:85vw;
             margin-right: -53px;
             border-radius: 50px;
             border: solid 1px $mainC;
@@ -72,7 +75,7 @@ body {
     main {
         margin: 0 auto;
         width: 80vw;
-        min-height: 300px;
+        min-height: 620px;
         height: fit-content;
         display: flex;
         justify-content: center;
@@ -85,7 +88,7 @@ body {
             font-size: 22px;
         }
         img {
-            width: 150px;
+            width: 200px;
             margin: 10px;
             border-radius: 20px 400px 50px 300px;
             &:hover {
@@ -114,7 +117,7 @@ body {
         transform: translateX(-50%);
         background-color: rgb(47, 53, 54);
         border-radius: 20px;
-        width: 410px;
+        width: 350px;
         height: 500px;
         display: flex;
         justify-content: space-around;
@@ -127,7 +130,7 @@ body {
                 img {
                     min-width: 200px;
                     max-height: 350px;
-                    transform: translateX(100px);
+                    transform: translateX(70px);
                 }
                 h3 {
                     text-align: center;
@@ -148,7 +151,7 @@ body {
                     font-size: 25px;
                     padding-top: 0px;
                     line-height: 0;
-                    width: 205px;
+                    width: 175px;
                     height: 40px;
                     position: absolute;
                     bottom: 0;
@@ -160,7 +163,7 @@ body {
                         background-color: rgba(143, 143, 143, 0.198);
                     }
                     &:nth-child(2) {
-                        left: 205px;
+                        left: 175px;
                         border-radius: 0 0 20px 0;
                         background-color: $mainC;
                         color: $mainBC;
@@ -195,7 +198,7 @@ body {
         }
         img {
             height: 150px;
-            margin-left: 300px;
+            margin-left: 200px;
         }
     }
     form {
@@ -260,6 +263,9 @@ body {
                 }
                 #formLink {
                     text-decoration: none;
+                    z-index:2;
+                    padding:5px 60px;
+                    cursor:auto;
                 }
             }
         }
@@ -272,6 +278,7 @@ body {
     #home {
         width: 100vw;
         margin-top: 100px;
+        min-height:300vh;
         section {
             width: 99vw;
             height: 400px;
@@ -330,14 +337,19 @@ body {
         }
         #inputBox {
             margin-top: 100px;
+            input{
+                width: 65vw;
+            }
         }
         footer {
             img {
-                margin-left: 1100px;
+                margin-left: 80vw;
             }
         }
         form {
-            margin-top: 100px;
+            margin-top: 20vh;
+            min-height: 40vh;
+            margin-bottom:24vh;
         }
         #home {
             transform: translateX(-10px);
